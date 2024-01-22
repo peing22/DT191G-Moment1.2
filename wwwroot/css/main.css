@@ -1,0 +1,168 @@
+/* ÖVERGRIPANDE */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* SIDHUVUD */
+header {
+    background-color: black;
+    padding: 1px 3px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    margin: 3px 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 3px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover,
+.active {
+    background-color: rgba(255, 78, 14, 0.321);
+}
+
+
+/* HUVUDINNEHÅLL */
+main {
+    padding: 10px;
+    max-width: 530px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.conversion,
+.json {
+    margin: 20px 0;
+}
+
+.conversion p,
+.json p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.conversion button {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.json ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.json ul li {
+    margin-bottom: 4px;
+}
+
+.json ul li a {
+    color: black;
+    transition: 0.3s;
+}
+
+.json ul li a:hover {
+    color: rgb(255, 78, 14);
+}
+
+
+/* INFO-BOX */
+.info-box {
+    background-color: rgba(255, 78, 14, 0.321);
+    padding: 10px;
+    text-align: center;
+}
+
+.info-box p {
+    margin: 5px;
+}
+
+
+/* SIDFOT */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 0 20px;
+}
+
+footer a {
+    color: rgb(255, 78, 14);
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* VID SKÄRMBREDD PÅ MINST 600 PIXLAR */
+@media screen and (min-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        max-width: 530px;
+        margin: auto;
+    }
+
+    header nav ul li a {
+        padding: 5px 15px;
+        font-size: 16px;
+        border-top: 1px solid rgba(255, 78, 14, 0.321);
+        border-bottom: 1px solid rgba(255, 78, 14, 0.321);
+    }
+
+    header nav ul li a:hover,
+    .active {
+        background-color: black;
+        border-top: 1px solid rgb(255, 78, 14);
+        border-bottom: 1px solid rgb(255, 78, 14);
+    }
+
+    main {
+        padding-top: 20px;
+    }
+}

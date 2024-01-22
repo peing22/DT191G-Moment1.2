@@ -1,0 +1,14 @@
+<!-- Komponenten som kan användas för att visa en informationsruta -->
+<div class="info-box">
+    <p><strong>@Title</strong></p>
+    <p>@Message</p>
+</div>
+
+@code {
+    // Publika egenskaper med standardvärden och som kan tilldelas nya värden när komponenten används
+    [Parameter]
+    public string Title { get; set; } = "Informationsruta (info-box)";
+
+    [Parameter]
+    public string Message { get; set; } = "Det här är en komponent för en informationsruta.";
+}

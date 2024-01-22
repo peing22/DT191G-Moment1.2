@@ -1,0 +1,53 @@
+@page "/json"
+@inject HttpClient Http
+
+<!-- Definierar sidtitel -->
+<PageTitle>JSON</PageTitle>
+
+<h1>JSON</h1>
+
+<!-- Komponenten InfoBox används för att visa en informationsruta -->
+<moment12.Components.InfoBox Title="Välkommen till JSON-sidan!"
+    Message="Kurserna som listas nedan ingår i programmet Webbutveckling." />
+
+<div class="json">
+    <p><strong>Kurser:</strong></p>
+
+    <!-- Om arrayen är lika med null skrivs ett meddelande ut, i annat fall... -->
+    @if (courses == null)
+    {
+        <p>Laddar...</p>
+    }
+    else
+    {
+        <ul>
+            <!-- Loopar igenom arrayen med kurser och skriver ut varje kurs till ett li-element -->
+            @foreach (var course in courses)
+            {
+                <li><a href="@course.Syllabus" target="_blank">@course.CourseCode, @course.CourseName</a></li>
+            }
+        </ul>
+    }
+</div>
+
+@code {
+    // Array för att lagra kurser
+    private Course[]? courses;
+
+    // Metod som körs när sidan initialiseras
+    protected override async Task OnInitializedAsync()
+    {
+        // Hämtar kursdata i JSON-format från angiven URL
+        courses = await Http.GetFromJsonAsync<Course[]>("json-data/courses.json");
+    }
+
+    // Klass som representerar en kurs
+    public class Course
+    {
+        public string? CourseCode { get; set; }
+
+        public string? CourseName { get; set; }
+
+        public string? Syllabus { get; set; }
+    }
+}

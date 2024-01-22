@@ -1,0 +1,52 @@
+@page "/conversion"
+
+<!-- Definierar sidtitel -->
+<PageTitle>Konvertering</PageTitle>
+
+<h1>Konvertering</h1>
+
+<!-- Komponenten InfoBox används för att visa en informationsruta -->
+<moment12.Components.InfoBox Title="Välkommen till konverteringssidan!"
+    Message="Använd verktygen nedan för att konvertera sträcka och hastighet." />
+
+<!-- Konvertering med data-bindings och event-hanterare (klick) -->
+<div class="conversion">
+    <p><strong>Konvertera meter till fot</strong></p>
+    <label for="meterInput">Ange antal meter:</label><br>
+    <input type="number" id="meterInput" @bind="meterValue" />
+    <button @onclick="ConvertMeterToFeet">Konvertera</button>
+    <p>Resultat: @feetResult fot</p>
+</div>
+
+<div class="conversion">
+    <p><strong>Konvertera km/h till miles/hour</strong></p>
+    <label for="kmInput">Ange hastighet i km/h:</label><br>
+    <input type="number" id="kmInput" @bind="kmValue" />
+    <button @onclick="ConvertKmToMiles">Konvertera</button>
+    <p>Resultat: @milesResult miles/hour</p>
+</div>
+
+
+@code {
+    // Variabler för inmatning och resultat för konvertering från meter till fot
+    private double meterValue;
+    private double feetResult;
+
+    // Variabler för inmatning och resultat för konvertering från km/h till miles/hour
+    private double kmValue;
+    private int milesResult;
+
+    // Metod för att konvertera meter till fot
+    private void ConvertMeterToFeet()
+    {
+        // Resultat av konvertering avrundat till två decimaler sätts som värde för variabeln
+        feetResult = Math.Round(meterValue * 3.28084, 2);
+    }
+
+    // Metod för att konvertera km/h till miles/hour
+    private void ConvertKmToMiles()
+    {
+        // Resultat av konvertering avrundat till heltal sätts som värde för variabeln
+        milesResult = (int)Math.Round(kmValue * 0.621371);
+    }
+}

@@ -1,0 +1,77 @@
+[
+    {
+        "courseCode": "DT057G",
+        "courseName": "Webbutveckling I",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/"
+    },
+    {
+        "courseCode": "DT084G",
+        "courseName": "Introduktion till programmering i JavaScript",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT084G/"
+    },
+    {
+        "courseCode": "DT200G",
+        "courseName": "Grafisk teknik för webb",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT200G/"
+    },
+    {
+        "courseCode": "DT068G",
+        "courseName": "Webbanvändbarhet",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT068G/"
+    },
+    {
+        "courseCode": "DT093G",
+        "courseName": "Webbutveckling II",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT093G/"
+    },
+    {
+        "courseCode": "DT003G",
+        "courseName": "Databaser",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT003G/"
+    },
+    {
+        "courseCode": "DT173G",
+        "courseName": "Webbutveckling III",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT173G/"
+    },
+    {
+        "courseCode": "DT197G",
+        "courseName": "Webbdesign för CMS",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT197G/"
+    },
+    {
+        "courseCode": "IK060G",
+        "courseName": "Projektledning",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/IK060G/"
+    },
+    {
+        "courseCode": "DT193G",
+        "courseName": "Fullstack-utveckling med ramverk",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT193G/"
+    },
+    {
+        "courseCode": "DT162G",
+        "courseName": "JavaScript-baserad webbutveckling",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT162G/"
+    },
+    {
+        "courseCode": "DT071G",
+        "courseName": "Programmering i C#.NET",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT071G/"
+    },
+    {
+        "courseCode": "DT191G",
+        "courseName": "Webbutveckling med .NET",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT191G/"
+    },
+    {
+        "courseCode": "IG021G",
+        "courseName": "Affärsplaner och kommersialisering",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/IG021G/"
+    },
+    {
+        "courseCode": "DT140G",
+        "courseName": "Självständigt arbete",
+        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT140G/"
+    }
+]
