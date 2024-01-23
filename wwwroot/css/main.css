@@ -52,7 +52,7 @@ header nav ul li a:hover,
 /* HUVUDINNEHÅLL */
 main {
     padding: 10px;
-    max-width: 530px;
+    max-width: 550px;
     margin: auto;
 }
 
@@ -74,6 +74,7 @@ h1 {
     margin-bottom: 0;
 }
 
+.conversion input,
 .conversion button {
     font-family: 'Montserrat', Arial, sans-serif;
 }
@@ -144,7 +145,7 @@ footer a:hover {
     header nav ul {
         display: flex;
         justify-content: space-between;
-        max-width: 530px;
+        max-width: 550px;
         margin: auto;
     }
 
@@ -164,5 +165,16 @@ footer a:hover {
 
     main {
         padding-top: 20px;
+    }
+
+    main p,
+    .conversion label,
+    .json ul {
+        font-size: 16px;
+    }
+
+    .conversion p,
+    .json p {
+        margin-bottom: 5px;
     }
 }
